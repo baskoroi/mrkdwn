@@ -1,5 +1,5 @@
 .App {
-    max-width: 1024px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .text {
-    width: 508px;
+    width: 476px;
     height: 540px;
     padding: 8px;
 

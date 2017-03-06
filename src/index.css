@@ -1,12 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    
+
     background-color: #bdc3c7;
 }
 
 body, body * {
     box-sizing: border-box;
-
-    font-family: 'Georgia', 'Times New Roman', serif;
 }

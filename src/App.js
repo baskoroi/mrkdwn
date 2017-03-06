@@ -99,7 +99,8 @@ class App extends Component {
                       [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm
                       [3]: http://www.markitdown.net/
                       [4]: http://daringfireball.net/projects/markdown/basics
-                      [5]: http://daringfireball.net/projects/markdown/syntax`).replace(/^                    /gm, '')
+                      [5]: http://daringfireball.net/projects/markdown/syntax`)
+            .replace(/^                    /gm, '')
         });
     }
 

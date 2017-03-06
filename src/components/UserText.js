@@ -3,15 +3,17 @@ import React, { Component } from 'react';
 import './UserText.css';
 
 class UserText extends Component {
-    handleChange(text) {
-        this.props.onChange(text);
+    handleChange(event) {
+        this.props.onChange(event.target.value);
     }
 
     render() {
         return (
             <textarea 
+                onChange={this.handleChange.bind(this)}
                 className="UserText card half text"
-                ref="user">{this.props.text}</textarea>
+                ref="user"
+                value={this.props.text}></textarea>
         );
     }
 }

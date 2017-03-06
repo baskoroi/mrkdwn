@@ -8,8 +8,8 @@ class MarkdownText extends Component {
             <textarea
                 className="MarkdownText card half text"
                 ref="markdown"
+                value={this.props.text}
                 disabled>
-                {this.props.text}
             </textarea>
         );
     }

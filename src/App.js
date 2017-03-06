@@ -103,11 +103,15 @@ class App extends Component {
         });
     }
 
+    handleChange(text) {
+        this.setState({ text });
+    }
+
     render() {
         return (
             <div className="App">
                 <Header />
-                <UserText text={this.state.text} />
+                <UserText onChange={this.handleChange.bind(this)} text={this.state.text} />
                 <MarkdownText text={this.state.text} />
             </div>
         );

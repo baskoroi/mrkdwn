@@ -3,4 +3,6 @@
     margin-left: 4px;
 
     color: #333;
+    overflow-x: initial;
+    overflow-y: scroll;
 }

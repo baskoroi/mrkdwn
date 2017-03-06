@@ -18,6 +18,8 @@ class App extends Component {
         this.setState({
             text: (`# An exhibit of Markdown
 
+                    *Sample text taken from: <http://www.markitdown.net/markdown/>*
+
                     This note demonstrates some of what [Markdown][1] is capable of doing.
 
                     *Note: Feel free to play with this page. Unlike regular notes, this doesn't automatically save itself.*

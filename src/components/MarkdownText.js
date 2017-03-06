@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
+import marked from 'marked';
 
 import './MarkdownText.css';
 
 class MarkdownText extends Component {
+    constructor() {
+        super();
+        marked.setOptions({
+            renderer: new marked.Renderer(),
+            gfm: true,
+            tables: true,
+            breaks: false,
+            pedantic: false,
+            sanitize: true,
+            smartLists: true,
+            smartypants: false
+        });
+    }
+
     render() {
         return (
-            <textarea
+            <div
                 className="MarkdownText card half text"
                 ref="markdown"
-                value={this.props.text}
-                disabled>
-            </textarea>
+                dangerouslySetInnerHTML={{ __html: marked(this.props.text || '') }}
+                disabled />
         );
     }
 }

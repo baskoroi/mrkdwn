@@ -13,4 +13,5 @@ This is a Markdown previewer I built while learning in FreeCodeCamp. The user wi
 
 ## How to run
 
-`npm start` to start the server which hosts this application
+1. `npm install` to install all the required packages.
+2. `npm start` to start the server which hosts this application.

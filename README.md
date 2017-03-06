@@ -10,3 +10,7 @@ This is a Markdown previewer I built while learning in FreeCodeCamp. The user wi
 2. Their text formatted in Markdown
 
 **Tools used:** React, npm
+
+## How to run
+
+`npm start` to start the server which hosts this application
